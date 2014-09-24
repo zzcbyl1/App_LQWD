@@ -1,0 +1,23 @@
+package com.example.android_spinner;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+public class MainActivity extends Activity {
+
+	private Spinner myddl;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		myddl = (Spinner) findViewById(R.id.myDropdownlist);
+
+		ArrayAdapter<String> adapter = ArrayAdapter.createFromResource(this,
+				R.array.ddlValue, android.R.layout.simple_list_item_1);
+
+	}
+}

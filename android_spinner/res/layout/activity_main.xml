@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
 
-    <TextView
-        android:id="@+id/myTextView"
+    <Spinner
+        android:id="@+id/myDropdownlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试" />
+         />
 
 </RelativeLayout>
