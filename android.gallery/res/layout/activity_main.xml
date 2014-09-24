@@ -4,9 +4,18 @@
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageSwitcher 
+        android:id="@+id/imageSwither"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerInParent="true"
+        ></ImageSwitcher>
+    
+    <Gallery
+        android:id="@+id/myGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spacing="10dp"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

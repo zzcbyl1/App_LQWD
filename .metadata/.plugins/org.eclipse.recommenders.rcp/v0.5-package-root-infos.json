@@ -1,5 +1,31 @@
 [
   {
+    "symbolicName": "annotations",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2db301669e463cda87a20e0701f5e99757ca60be",
+    "jarFileModificationDate": "2014-06-20T11:09:26.995+08:00",
+    "location": "E:\\Android\\android-sdk\\tools\\support\\annotations.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b50d42b32e1d8a6c2d5f19a846474d5e2199c68e",
+    "jarFileModificationDate": "2014-06-23T16:54:21.374+08:00",
+    "location": "E:\\Android\\android-sdk\\platforms\\android-10\\android.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "android-support-v4",
     "version": {
       "major": -1,
@@ -10,6 +36,19 @@
     "jarFileFingerprint": "ded9acc6a9792b8f1afc470f0c9cd36d178914cd",
     "jarFileModificationDate": "2014-09-24T11:19:37.915+08:00",
     "location": "E:\\AndroidCode\\android_spinner\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appcompat_v7_2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a21821976e16899d139972724f90cc918dfe66c7",
+    "jarFileModificationDate": "2014-09-24T14:38:23.562+08:00",
+    "location": "E:\\AndroidCode\\appcompat_v7_2\\bin\\appcompat_v7_2.jar",
     "javaRuntime": false
   },
   {
@@ -34,8 +73,47 @@
       "qualifier": ""
     },
     "jarFileFingerprint": "ded9acc6a9792b8f1afc470f0c9cd36d178914cd",
+    "jarFileModificationDate": "2014-09-24T14:38:02.872+08:00",
+    "location": "E:\\AndroidCode\\android.gallery\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ded9acc6a9792b8f1afc470f0c9cd36d178914cd",
+    "jarFileModificationDate": "2014-06-20T11:38:27.147+08:00",
+    "location": "E:\\AndroidCode\\appcompat_v7_2\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ded9acc6a9792b8f1afc470f0c9cd36d178914cd",
     "jarFileModificationDate": "2014-06-20T11:38:27.147+08:00",
     "location": "E:\\AndroidCode\\appcompat_v7\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v7-appcompat",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "21297ae2bf22a0ce81c9b59992cf0693eec45d5b",
+    "jarFileModificationDate": "2014-06-20T11:38:27.547+08:00",
+    "location": "E:\\AndroidCode\\appcompat_v7_2\\libs\\android-support-v7-appcompat.jar",
     "javaRuntime": false
   },
   {
@@ -59,8 +137,8 @@
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "456454d104c6dfb35968a800411596909650a6d8",
-    "jarFileModificationDate": "2014-09-24T11:20:09.784+08:00",
+    "jarFileFingerprint": "19b0e561f2dedccae433d9132709749b68f726db",
+    "jarFileModificationDate": "2014-09-24T13:08:47.635+08:00",
     "location": "E:\\AndroidCode\\appcompat_v7\\bin\\appcompat_v7.jar",
     "javaRuntime": false
   }

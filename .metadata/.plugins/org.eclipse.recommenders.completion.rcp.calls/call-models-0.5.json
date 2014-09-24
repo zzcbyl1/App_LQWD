@@ -3,5 +3,20 @@
     "location": "E:\\AndroidCode\\android_spinner\\gen",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027E:\\AndroidCode\\android_spinner\\gen\u0027. Skipped."
+  },
+  "E:\\Android\\android-sdk\\platforms\\android-19\\android.jar": {
+    "location": "E:\\Android\\android-sdk\\platforms\\android-19\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027E:\\Android\\android-sdk\\platforms\\android-19\\android.jar\u0027. Neither fingerprint \u00277f972d2aa0fcb741fc84a9a10c98555f6f431a7a\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "E:\\AndroidCode\\android.gallery\\gen": {
+    "location": "E:\\AndroidCode\\android.gallery\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android.gallery\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android.gallery\\src": {
+    "location": "E:\\AndroidCode\\android.gallery\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android.gallery\\src\u0027. Skipped."
   }
 }
