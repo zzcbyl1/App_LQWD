@@ -1,6 +1,7 @@
 package com.game.zhangzc.guessgame;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
@@ -16,7 +17,6 @@ public class LoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
-		final SharedPreferences pre = getPreferences(MODE_PRIVATE);
 
 		UserNameET = (EditText) findViewById(R.id.etUserName);
 		Button beginbtn = (Button) findViewById(R.id.button1);
@@ -29,13 +29,11 @@ public class LoginActivity extends Activity {
 					return;
 
 				} else {
-					// ¥Ê”√ªß√˚
-					Editor editor = pre.edit();
-					editor.putString("username", UserNameET.getText()
-							.toString());
-					editor.commit();
 
-					setResult(MainActivity.REQUESTCODE);
+					Intent intent = new Intent();
+					intent.putExtra("username", UserNameET.getText().toString());
+
+					setResult(MainActivity.REQUESTCODE, intent);
 					finish();
 				}
 			}
