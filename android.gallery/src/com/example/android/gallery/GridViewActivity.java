@@ -37,19 +37,20 @@ public class GridViewActivity extends Activity {
 	private static class DataAdapter extends BaseAdapter {
 		private Context context;
 		private LayoutInflater inflater;
-		private Bitmap[] imageBitMap = new Bitmap[images.length];
-		private Bitmap[] imageThumbs = new Bitmap[images.length];
+
+		// private Bitmap[] imageBitMap = new Bitmap[images.length];
+		// private Bitmap[] imageThumbs = new Bitmap[images.length];
 
 		public DataAdapter(Context context) {
 			this.context = context;
 			inflater = LayoutInflater.from(context);
 
-			for (int i = 0; i < images.length; i++) {
-				imageBitMap[i] = BitmapFactory.decodeResource(
-						context.getResources(), images[i]);
-				imageThumbs[i] = Bitmap.createScaledBitmap(imageBitMap[i], 100,
-						100, false);
-			}
+			/*
+			 * for (int i = 0; i < images.length; i++) { imageBitMap[i] =
+			 * BitmapFactory.decodeResource( context.getResources(), images[i]);
+			 * imageThumbs[i] = Bitmap.createScaledBitmap(imageBitMap[i], 100,
+			 * 100, false); }
+			 */
 		}
 
 		@Override
@@ -83,7 +84,8 @@ public class GridViewActivity extends Activity {
 			}
 
 			Log.i("--asass--", String.valueOf(position));
-			viewHolder.iv.setImageBitmap(imageThumbs[position]);
+			// viewHolder.iv.setImageBitmap(imageThumbs[position]);
+			viewHolder.iv.setImageResource(images[position]);
 
 			return convertView;
 		}

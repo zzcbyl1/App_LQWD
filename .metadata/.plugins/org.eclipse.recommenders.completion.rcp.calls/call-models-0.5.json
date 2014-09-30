@@ -18,5 +18,70 @@
     "location": "E:\\AndroidCode\\android.gallery\\src",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027E:\\AndroidCode\\android.gallery\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_style\\gen": {
+    "location": "E:\\AndroidCode\\android_style\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_style\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_style\\src": {
+    "location": "E:\\AndroidCode\\android_style\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_style\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_contentmenu\\gen": {
+    "location": "E:\\AndroidCode\\android_contentmenu\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_contentmenu\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_contentmenu\\src": {
+    "location": "E:\\AndroidCode\\android_contentmenu\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_contentmenu\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_ContextProvider\\src": {
+    "location": "E:\\AndroidCode\\android_ContextProvider\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_ContextProvider\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_ContextProvider\\gen": {
+    "location": "E:\\AndroidCode\\android_ContextProvider\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_ContextProvider\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_broadcast_receiver\\gen": {
+    "location": "E:\\AndroidCode\\android_broadcast_receiver\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_broadcast_receiver\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_Notification\\gen": {
+    "location": "E:\\AndroidCode\\android_Notification\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_Notification\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_Notification\\src": {
+    "location": "E:\\AndroidCode\\android_Notification\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_Notification\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_Notification2\\src": {
+    "location": "E:\\AndroidCode\\android_Notification2\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_Notification2\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_Notification2\\gen": {
+    "location": "E:\\AndroidCode\\android_Notification2\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_Notification2\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_Dialog\\src": {
+    "location": "E:\\AndroidCode\\android_Dialog\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_Dialog\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\android_Dialog\\gen": {
+    "location": "E:\\AndroidCode\\android_Dialog\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\android_Dialog\\gen\u0027. Skipped."
   }
 }

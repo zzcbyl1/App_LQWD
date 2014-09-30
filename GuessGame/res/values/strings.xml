@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuessWord</string>
+    <string name="BeginBtn">开始游戏</string>
+    <string name="UserNameTV">用户名：</string>
+    <string name="UserNameHint">请输入用户名</string>
+
+</resources>
