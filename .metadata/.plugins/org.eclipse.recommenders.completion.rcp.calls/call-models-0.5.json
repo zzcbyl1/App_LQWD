@@ -83,5 +83,15 @@
     "location": "E:\\AndroidCode\\android_Dialog\\gen",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027E:\\AndroidCode\\android_Dialog\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\GuessGame\\gen": {
+    "location": "E:\\AndroidCode\\GuessGame\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\GuessGame\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\GuessGame\\src": {
+    "location": "E:\\AndroidCode\\GuessGame\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\GuessGame\\src\u0027. Skipped."
   }
 }
