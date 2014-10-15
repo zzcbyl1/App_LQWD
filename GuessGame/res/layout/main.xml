@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEA01"
+    android:background="@color/backgroundColor"
     android:padding="10dp"
     tools:context="${packageName}.${activityClass}" >
 
@@ -63,12 +63,14 @@
             <TextView
                 android:id="@+id/tvPromptTitle1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="22dp"
                 android:layout_marginLeft="8dp"
                 android:text="@string/PromptTitle1" />
 
             <TextView
                 android:id="@+id/tvPrompt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp" />
         </LinearLayout>
 
@@ -81,7 +83,7 @@
             <TextView
                 android:id="@+id/tvPromptTitle2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="22dp"
                 android:layout_marginLeft="50dp"
                 android:text="@string/PromptTitle2" />
 
@@ -101,7 +103,7 @@
             <TextView
                 android:id="@+id/tvPromptTitle3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="22dp"
                 android:layout_marginLeft="50dp"
                 android:text="@string/PromptTitle3" />
 
@@ -121,7 +123,7 @@
             <TextView
                 android:id="@+id/tvPromptTitle4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="22dp"
                 android:layout_marginLeft="50dp"
                 android:text="@string/PromptTitle4" />
 
@@ -136,7 +138,7 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
-         android:layout_height="1dp"
+        android:layout_height="1dp"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
         android:layout_marginTop="15dp"
@@ -148,19 +150,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/InputGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="3dp"
+            android:stretchMode="columnWidth">
+        </GridView>
     </LinearLayout>
 
-    
-    <GridView
-        android:id="@+id/OptionGrid"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/AnswerTable"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" ></GridView>
-    
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
 
-    
+        <GridView
+            android:id="@+id/OptionGrid"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="2dp"
+            android:numColumns="8"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" >
+        </GridView>
+    </LinearLayout>
+
 </RelativeLayout>

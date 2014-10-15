@@ -48,22 +48,22 @@ public class QADataDAO {
 			if (eventType == XmlPullParser.TEXT) {
 				switch (index) {
 				case 1:
-					qaData.PROMPT_FIRST = xrp.getText();
+					qaData.PROMPT_FIRST = xrp.getText().trim();
 					break;
 				case 2:
-					qaData.PROMPT_SECOND = xrp.getText();
+					qaData.PROMPT_SECOND = xrp.getText().trim();
 					break;
 				case 3:
-					qaData.PROMPT_THIRD = xrp.getText();
+					qaData.PROMPT_THIRD = xrp.getText().trim();
 					break;
 				case 4:
-					qaData.PROMPT_FOUR = xrp.getText();
+					qaData.PROMPT_FOUR = xrp.getText().trim();
 					break;
 				case 5:
-					qaData.ANSWER_FIELD = xrp.getText();
+					qaData.ANSWER_FIELD = xrp.getText().trim();
 					break;
 				case 6:
-					qaData.GAME_OPTION = xrp.getText();
+					qaData.GAME_OPTION = xrp.getText().trim();
 					break;
 				default:
 					break;

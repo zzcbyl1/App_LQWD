@@ -81,3 +81,60 @@ org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.a
 2014-09-29 10:33:27,958 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
 2014-09-30 10:26:15,064 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
 2014-10-08 10:42:48,938 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-10 10:31:07,623 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-10 16:17:42,139 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-10 16:44:53,677 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-10 16:45:14,858 [Worker-15] WARN  o.e.r.i.rcp.repo.ModelRepository - 'remote-models (http://download.eclipse.org/recommenders/models/kepler/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+2014-10-10 16:45:15,076 [pool-6-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-10 16:45:57,298 [Worker-15] WARN  o.e.r.i.rcp.repo.ModelRepository - 'remote-models (http://download.eclipse.org/recommenders/models/kepler/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+2014-10-10 16:45:57,362 [Worker-15] WARN  o.e.r.i.r.repo.UpdateModelIndexJob - Updating index cancelled.
+org.sonatype.aether.resolution.DependencyResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): Error transferring file: Connection timed out: no further information to http://download.eclipse.org/recommenders/models/kepler/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:375) ~[na:na]
+	at org.eclipse.recommenders.internal.rcp.repo.ModelRepository.resolve(ModelRepository.java:226) ~[na:na]
+	at org.eclipse.recommenders.internal.rcp.repo.UpdateModelIndexJob.downloadAndUnzipIndex(UpdateModelIndexJob.java:70) ~[na:na]
+	at org.eclipse.recommenders.internal.rcp.repo.UpdateModelIndexJob.run(UpdateModelIndexJob.java:51) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20130429-1813.jar:na]
+Caused by: org.sonatype.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): Error transferring file: Connection timed out: no further information to http://download.eclipse.org/recommenders/models/kepler/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:538) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:216) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:358) ~[na:na]
+	... 4 common frames omitted
+org.sonatype.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): Error transferring file: Connection timed out: no further information to http://download.eclipse.org/recommenders/models/kepler/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$4.wrap(WagonRepositoryConnector.java:951) ~[na:na]
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$4.wrap(WagonRepositoryConnector.java:941) ~[na:na]
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$GetTask.run(WagonRepositoryConnector.java:669) ~[na:na]
+	at org.sonatype.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:60) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_05]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_05]
+Caused by: org.apache.maven.wagon.TransferFailedException: Error transferring file: Connection timed out: no further information to http://download.eclipse.org/recommenders/models/kepler/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+	at org.sonatype.maven.wagon.AhcWagon.fillInputData(AhcWagon.java:301) ~[na:na]
+	at org.apache.maven.wagon.StreamWagon.getInputStream(StreamWagon.java:116) ~[na:na]
+	at org.apache.maven.wagon.StreamWagon.getIfNewer(StreamWagon.java:88) ~[na:na]
+	at org.apache.maven.wagon.StreamWagon.get(StreamWagon.java:61) ~[na:na]
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$GetTask.run(WagonRepositoryConnector.java:601) ~[na:na]
+	... 4 common frames omitted
+Caused by: java.io.IOException: Connection timed out: no further information to http://download.eclipse.org/recommenders/models/kepler/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+	at org.sonatype.maven.wagon.AhcWagon.fillInputData(AhcWagon.java:270) ~[na:na]
+	... 8 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: no further information to http://download.eclipse.org/recommenders/models/kepler/org/eclipse/recommenders/index/0.0.0/index-0.0.0.zip
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:95) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:381) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:372) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:334) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:389) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_05]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[na:1.8.0_05]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:384) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:354) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:276) ~[na:na]
+	... 3 common frames omitted
+2014-10-13 10:17:14,683 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-13 10:17:15,671 [pool-6-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-10-15 13:36:24,031 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
