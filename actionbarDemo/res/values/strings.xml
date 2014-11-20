@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">actionbarDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="save">save</string>
+    <string name="edit">edit</string>
+    <string name="add">add</string>
+    <string name="del">del</string>
+
+</resources>

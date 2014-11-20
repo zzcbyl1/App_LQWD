@@ -15,22 +15,28 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="wait"/>
-			<item value="answerCount"/>
-			<item value="length"/>
-			<item value="tvPrompt1"/>
-			<item value="sBooksProjectionMap"/>
-			<item value="CONTENT_URI"/>
-			<item value="AUTHORITY"/>
+			<item value="BaseListener"/>
+			<item value="@+id/detail"/>
+			<item value="Dp2Px(20)"/>
+			<item value="Dp2Px(300)"/>
+			<item value="Dp2Px(30)"/>
+			<item value="Dp2Px(80)"/>
+			<item value="Log.i"/>
+			<item value="username"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="Dp2Px(22)"/>
+			<item value="Dp2Px(100)"/>
+			<item value="Dp2Px(20)"/>
+			<item value="Dp2Px(30)"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="273" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="1067" key="DIALOG_X_ORIGIN"/>
-		<item value="163" key="DIALOG_Y_ORIGIN"/>
+		<item value="1011" key="DIALOG_X_ORIGIN"/>
+		<item value="150" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

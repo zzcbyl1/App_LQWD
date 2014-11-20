@@ -3,5 +3,20 @@
     "location": "E:\\Android\\android-sdk\\platforms\\android-19\\android.jar",
     "status": "UNRESOLVED",
     "error": "No call model found for \u0027E:\\Android\\android-sdk\\platforms\\android-19\\android.jar\u0027. Neither fingerprint \u00277f972d2aa0fcb741fc84a9a10c98555f6f431a7a\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "E:\\Android\\android-sdk\\platforms\\android-17\\android.jar": {
+    "location": "E:\\Android\\android-sdk\\platforms\\android-17\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027E:\\Android\\android-sdk\\platforms\\android-17\\android.jar\u0027. Neither fingerprint \u0027322db3959c3383f4be9daa75ffa427d1485879ad\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "E:\\程序资料\\!Android资料\\精通android 4 源码\\ProAndroid4_Ch10_TestActionBar\\src": {
+    "location": "E:\\程序资料\\!Android资料\\精通android 4 源码\\ProAndroid4_Ch10_TestActionBar\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\程序资料\\!Android资料\\精通android 4 源码\\ProAndroid4_Ch10_TestActionBar\\src\u0027. Skipped."
+  },
+  "E:\\Android\\android-sdk\\platforms\\android-10\\android.jar": {
+    "location": "E:\\Android\\android-sdk\\platforms\\android-10\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027E:\\Android\\android-sdk\\platforms\\android-10\\android.jar\u0027. Neither fingerprint \u0027b50d42b32e1d8a6c2d5f19a846474d5e2199c68e\u0027 nor symbolic name \u0027android\u0027 are known."
   }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">luqinwenda</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="logintitle">用户名：</string>
+    <string name="passwordtitle">　密码：</string>
+    <string name="loginhint">请输入用户名</string>
+    <string name="passwordhint">请输入密码</string>
+    <string name="btnlogin">登录</string>
+    <string name="btnregist">注册</string>
+
+</resources>
