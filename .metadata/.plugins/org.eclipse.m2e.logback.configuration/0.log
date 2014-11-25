@@ -146,3 +146,5 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 2014-11-17 11:50:55,167 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
 2014-11-19 16:53:22,696 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
 2014-11-20 11:59:26,850 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-11-21 10:12:42,401 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2014-11-24 11:18:22,668 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4

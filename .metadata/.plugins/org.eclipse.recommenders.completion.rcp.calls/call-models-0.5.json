@@ -133,5 +133,30 @@
     "location": "E:\\AndroidCode\\DialogDemo\\gen",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027E:\\AndroidCode\\DialogDemo\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\luqinwenda\\gen": {
+    "location": "E:\\AndroidCode\\luqinwenda\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\luqinwenda\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\luqinwenda\\src": {
+    "location": "E:\\AndroidCode\\luqinwenda\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\luqinwenda\\src\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\activityJumpAnimDemo\\gen": {
+    "location": "E:\\AndroidCode\\activityJumpAnimDemo\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\activityJumpAnimDemo\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\CramerDemo\\gen": {
+    "location": "E:\\AndroidCode\\CramerDemo\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\CramerDemo\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\CramerDemo\\src": {
+    "location": "E:\\AndroidCode\\CramerDemo\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\CramerDemo\\src\u0027. Skipped."
   }
 }
