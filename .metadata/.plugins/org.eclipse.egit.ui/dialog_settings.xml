@@ -2,11 +2,13 @@
 <section name="Workbench">
 	<item value="true" key="CommitDialog.showUntracked"/>
 	<list key="CommitDialog.authorValues">
+		<item value="zzcbyl &lt;cn36312@126.com&gt;"/>
 		<item value="zzcbyl1 &lt;cn36312@126.com&gt;"/>
 		<item value="zzcbyl1 &lt;cn36311@126.com&gt;"/>
 		<item value="zzcbyl1&lt;cn36311@126.com&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
+		<item value="zzcbyl &lt;cn36312@126.com&gt;"/>
 		<item value="zzcbyl1 &lt;cn36312@126.com&gt;"/>
 		<item value="zzcbyl1 &lt;cn36311@126.com&gt;"/>
 		<item value="zzcbyl1&lt;cn36311@126.com&gt;"/>

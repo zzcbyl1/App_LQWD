@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imv7"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv13"
+        android:layout_below="@+id/imv13"
+        android:background="@drawable/choujiang7" />
+
+    <ImageView
+        android:id="@+id/imv7_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv13"
+        android:layout_below="@+id/imv13"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv6"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv5"
+        android:layout_below="@+id/imv5"
+        android:background="@drawable/choujiang6" />
+
+    <ImageView
+        android:id="@+id/imv6_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv5"
+        android:layout_below="@+id/imv5"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv4"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv3"
+        android:layout_below="@+id/imv3"
+        android:background="@drawable/choujiang4" />
+
+    <ImageView
+        android:id="@+id/imv4_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv3"
+        android:layout_below="@+id/imv3"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv12"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imv1"
+        android:layout_toLeftOf="@+id/imv1"
+        android:background="@drawable/choujiang12" />
+
+    <ImageView
+        android:id="@+id/imv12_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imv1"
+        android:layout_toLeftOf="@+id/imv1"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv4"
+        android:layout_below="@+id/imv4"
+        android:background="@drawable/choujiang5" />
+
+    <ImageView
+        android:id="@+id/imv5_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv4"
+        android:layout_below="@+id/imv4"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/choujiang1" />
+
+    <ImageView
+        android:id="@+id/imv1_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv13"
+        android:layout_width="50dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/imv1"
+        android:layout_below="@+id/imv1"
+        android:background="@drawable/choujiang13" />
+
+    <ImageView
+        android:id="@+id/imv3"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv2"
+        android:layout_below="@+id/imv2"
+        android:background="@drawable/choujiang3" />
+
+    <ImageView
+        android:id="@+id/imv3_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv2"
+        android:layout_below="@+id/imv2"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imv1"
+        android:layout_toRightOf="@+id/imv1"
+        android:background="@drawable/choujiang2" />
+
+    <ImageView
+        android:id="@+id/imv2_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imv1"
+        android:layout_toRightOf="@+id/imv1"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imv8"
+        android:layout_below="@+id/imv8"
+        android:layout_marginTop="20dp"
+        android:text="抽奖结果" />
+
+    <ImageView
+        android:id="@+id/imv11"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv12"
+        android:layout_below="@+id/imv12"
+        android:background="@drawable/choujiang11" />
+
+    <ImageView
+        android:id="@+id/imv11_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv12"
+        android:layout_below="@+id/imv12"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv10"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv11"
+        android:layout_below="@+id/imv11"
+        android:background="@drawable/choujiang10" />
+
+    <ImageView
+        android:id="@+id/imv10_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv11"
+        android:layout_below="@+id/imv11"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv9"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv10"
+        android:layout_below="@+id/imv10"
+        android:background="@drawable/choujiang9" />
+
+    <ImageView
+        android:id="@+id/imv9_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv10"
+        android:layout_below="@+id/imv10"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imv8"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv9"
+        android:layout_below="@+id/imv9"
+        android:background="@drawable/choujiang8" />
+
+    <ImageView
+        android:id="@+id/imv8_out"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imv9"
+        android:layout_below="@+id/imv9"
+        android:background="@drawable/select_imv"
+        android:visibility="invisible" />
+
+</RelativeLayout>
