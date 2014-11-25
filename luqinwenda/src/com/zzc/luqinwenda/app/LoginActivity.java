@@ -3,19 +3,23 @@ package com.zzc.luqinwenda.app;
 import com.zzc.luqinwenda.dal.DataService;
 import com.zzc.luqinwenda.dal.UserJson2Object;
 import com.zzc.luqinwenda.model.User;
+import com.zzc.luqinwenda.util.ConfimDialog;
 
+import android.R.integer;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity {
@@ -23,6 +27,7 @@ public class LoginActivity extends Activity {
 	private static final String TAG = "------Log------";
 	private EditText loginET, pwdET;
 	private Button btn_login, btn_regiest;
+	private SharedPreferences pre;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +41,16 @@ public class LoginActivity extends Activity {
 
 		btn_login.setOnClickListener(listener);
 		btn_regiest.setOnClickListener(listener);
+
+		pre = getPreferences(MODE_PRIVATE);
+
+		long uid = pre.getLong("uid", 0);
+		// if (uid > 0) {
+		// jumpMain();
+		// }
 	}
 
-	private OnClickListener listener = new OnClickListener() {
+	OnClickListener listener = new View.OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
@@ -52,6 +64,7 @@ public class LoginActivity extends Activity {
 			default:
 				break;
 			}
+
 		}
 	};
 
@@ -65,31 +78,47 @@ public class LoginActivity extends Activity {
 		@Override
 		protected void onPostExecute(Object result) {
 			if (result != null) {
-				Log.i(TAG, "1111");
 				UserJson2Object userJ2O = new UserJson2Object(result.toString());
-				Log.i(TAG, "222");
 				String infoString = userJ2O.isLogin();
-				Log.i(TAG, infoString);
 				if (!infoString.isEmpty()) {
-					Log.i(TAG, "3333");
 					Toast.makeText(LoginActivity.this, infoString,
 							Toast.LENGTH_LONG).show();
+					return;
 				}
-				Log.i(TAG, "444");
 				User user = userJ2O.JsonToObject();
-				Log.i(TAG, "555");
-				SharedPreferences pre = getPreferences(MODE_PRIVATE);
+
 				Editor editor = pre.edit();
 				editor.putLong("uid", user.uid);
 				editor.putString("uname", user.uname);
 				editor.commit();
-
-				Intent intent = new Intent();
-				intent.setClass(LoginActivity.this, MainActivity.class);
-				startActivity(intent);
-
+				Log.i(TAG, String.valueOf(user.uid));
+				jumpMain();
 			}
 			super.onPostExecute(result);
+		}
+	}
+
+	private void jumpMain() {
+		Intent intent = new Intent();
+		intent.setClass(LoginActivity.this, MainActivity.class);
+		startActivity(intent);
+
+		finish();
+
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		super.onKeyDown(keyCode, event);
+		openCloseDialog(keyCode, LoginActivity.this);
+		return false;
+	}
+
+	public static void openCloseDialog(int keyCode, Context context) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			Dialog dialog = new ConfimDialog(context, "", "确定要退出吗?",
+					R.style.MyDialog);
+			dialog.show();
 		}
 	}
 

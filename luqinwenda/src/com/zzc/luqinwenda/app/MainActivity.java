@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,7 @@ public class MainActivity extends Activity {
 	private TextView pTextView;
 	View footer;
 	private int pagesize = 10;
-	private int maxpage = 0;
+	private static int maxpage = 0;
 	private int currentpage = 1;
 	private List<Feed> datalist = new ArrayList<Feed>();
 	private DataAdapter adapter;
@@ -51,10 +52,10 @@ public class MainActivity extends Activity {
 		footer = getLayoutInflater().inflate(R.layout.footer, null);
 
 		gvList.setOnScrollListener(listener);
+		gvList.addFooterView(footer);// 添加页脚（放在ListView最后）
+
 		new getHttpData().execute(currentpage, pagesize, this);
 
-		gvList.addFooterView(footer);// 添加页脚（放在ListView最后）
-		gvList.removeFooterView(footer);
 	}
 
 	private OnScrollListener listener = new OnScrollListener() {
@@ -68,12 +69,10 @@ public class MainActivity extends Activity {
 		public void onScroll(AbsListView view, int firstVisibleItem,
 				int visibleItemCount, int totalItemCount) {
 			if (gvList.getLastVisiblePosition() + 1 == totalItemCount) {
-				Log.i("------111------", String.valueOf(totalItemCount));
 				if (totalItemCount > 0) {
 					// 获取当前页
 					if ((currentpage + 1) <= maxpage && finish_load) {
 						finish_load = false;
-						gvList.addFooterView(footer);
 						new Thread(new Runnable() {
 
 							@Override
@@ -107,10 +106,6 @@ public class MainActivity extends Activity {
 		public void handleMessage(Message msg) {
 			datalist.addAll((List<Feed>) msg.obj);
 			adapter.notifyDataSetChanged();
-			// 删除页脚
-			if (gvList.getFooterViewsCount() > 0) {
-				gvList.removeFooterView(footer);
-			}
 			finish_load = true;
 		}
 	};
@@ -194,31 +189,28 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	/*public boolean isNetworkAvailable(Activity activity) {
-		Context context = activity.getApplicationContext();
-		// 获取手机所有连接管理对象（包括对wi-fi,net等连接的管理）
-		ConnectivityManager connectivityManager = (ConnectivityManager) context
-				.getSystemService(Context.CONNECTIVITY_SERVICE);
+	/*
+	 * public boolean isNetworkAvailable(Activity activity) { Context context =
+	 * activity.getApplicationContext(); // 获取手机所有连接管理对象（包括对wi-fi,net等连接的管理）
+	 * ConnectivityManager connectivityManager = (ConnectivityManager) context
+	 * .getSystemService(Context.CONNECTIVITY_SERVICE);
+	 * 
+	 * if (connectivityManager == null) { return false; } else { //
+	 * 获取NetworkInfo对象 NetworkInfo[] networkInfo =
+	 * connectivityManager.getAllNetworkInfo();
+	 * 
+	 * if (networkInfo != null && networkInfo.length > 0) { for (int i = 0; i <
+	 * networkInfo.length; i++) { System.out.println(i + "===状态===" +
+	 * networkInfo[i].getState()); System.out.println(i + "===类型===" +
+	 * networkInfo[i].getTypeName()); // 判断当前网络状态是否为连接状态 if
+	 * (networkInfo[i].getState() == NetworkInfo.State.CONNECTED) { return true;
+	 * } } } } return false; }
+	 */
 
-		if (connectivityManager == null) {
-			return false;
-		} else {
-			// 获取NetworkInfo对象
-			NetworkInfo[] networkInfo = connectivityManager.getAllNetworkInfo();
-
-			if (networkInfo != null && networkInfo.length > 0) {
-				for (int i = 0; i < networkInfo.length; i++) {
-					System.out.println(i + "===状态==="
-							+ networkInfo[i].getState());
-					System.out.println(i + "===类型==="
-							+ networkInfo[i].getTypeName());
-					// 判断当前网络状态是否为连接状态
-					if (networkInfo[i].getState() == NetworkInfo.State.CONNECTED) {
-						return true;
-					}
-				}
-			}
-		}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		super.onKeyDown(keyCode, event);
+		LoginActivity.openCloseDialog(keyCode, MainActivity.this);
 		return false;
-	}*/
+	}
 }

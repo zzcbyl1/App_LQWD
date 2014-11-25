@@ -18,7 +18,7 @@ public class DataService {
 	 * @return  用户信息
 	 */
 	public String Login(String login, String password) {
-		String url = "http://localhost:8090/index.php?app=public&mod=api&act=userlogin&login="
+		String url = "http://www.luqinwenda.com/index.php?app=public&mod=api&act=userlogin&login="
 				+ login + "&pwd=" + password;
 		String dataContent = new BasicHttpClient().httpGet(url);
 		return dataContent;
