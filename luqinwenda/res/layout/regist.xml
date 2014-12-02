@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
-
+    
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp" >
+        android:layout_marginTop="30dp" >
 
         <TextView
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="@string/logintitle"
             android:gravity="right"
+            android:text="@string/logintitle"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/regusername"
-            android:layout_width="180dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:hint="@string/loginhint"
+            android:hint="@string/regloginhint"
             android:textSize="16sp" />
     </TableRow>
 
@@ -37,13 +37,13 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="@string/passwordtitle"
             android:gravity="right"
+            android:text="@string/passwordtitle"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/regpwd"
-            android:layout_width="180dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:hint="@string/passwordhint"
@@ -61,39 +61,85 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="@string/repasswordtitle"
             android:gravity="right"
+            android:text="@string/repasswordtitle"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/reregpwd"
-            android:layout_width="180dp"
+            android:id="@+id/regrepwd"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:hint="@string/repasswordhint"
             android:inputType="textPassword"
             android:textSize="16sp" />
     </TableRow>
-
+    
     <TableRow
-        android:id="@+id/tableRow4"
+        android:id="@+id/tableRow7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp" >
+        android:layout_marginTop="10dp" >
 
         <TextView
-            android:id="@+id/setAvatar"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:text="@string/avatartitle" />
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:text="@string/unametitle"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reguname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/unamehint"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="@string/sextitle"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/sexgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/female" />
+        </RadioGroup>
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:gravity="center_horizontal" >
 
         <Button

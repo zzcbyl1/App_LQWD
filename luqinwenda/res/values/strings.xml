@@ -14,8 +14,15 @@
     <string name="cancelText">取消</string>
     
     <string name="dialogbg">#ccc</string>
+    <string name="regloginhint">请输入邮箱或手机号</string>
     <string name="repasswordtitle">重复密码：</string>
     <string name="repasswordhint">请再次输入密码</string>
+    <string name="avatardescription">头像</string>
     <string name="avatartitle">设置头像</string>
+    <string name="sextitle">性别：</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="unametitle">昵称</string>
+    <string name="unamehint">请输入昵称</string>
 
 </resources>

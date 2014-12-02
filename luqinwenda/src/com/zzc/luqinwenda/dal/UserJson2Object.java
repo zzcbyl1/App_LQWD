@@ -19,14 +19,33 @@ public class UserJson2Object {
 		}
 	}
 
-	public String isLogin() {
-		String info = "登录失败";
+	/**
+	 * 
+	 * @param refereStr 来源,组成:XX失败
+	 * @return  信息
+	 */
+	public String getInfo(String refereStr) {
+		String info = refereStr + "失败";
 		try {
 			info = Obj.getString("info");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
 		return info;
+	}
+
+	/**
+	 * 获取访问状态
+	 * @return 状态
+	 */
+	public int getStatus() {
+		int status = 0;
+		try {
+			status = Obj.getInt("status");
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return status;
 	}
 
 	public User JsonToObject() {

@@ -173,5 +173,15 @@
     "location": "E:\\Android\\android-sdk\\platforms\\android-10\\android.jar",
     "status": "UNRESOLVED",
     "error": "No call model found for \u0027E:\\Android\\android-sdk\\platforms\\android-10\\android.jar\u0027. Neither fingerprint \u0027b50d42b32e1d8a6c2d5f19a846474d5e2199c68e\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "E:\\AndroidCode\\App_LQWD\\luqinwenda\\gen": {
+    "location": "E:\\AndroidCode\\App_LQWD\\luqinwenda\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\App_LQWD\\luqinwenda\\gen\u0027. Skipped."
+  },
+  "E:\\AndroidCode\\App_LQWD\\luqinwenda\\src": {
+    "location": "E:\\AndroidCode\\App_LQWD\\luqinwenda\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\AndroidCode\\App_LQWD\\luqinwenda\\src\u0027. Skipped."
   }
 }

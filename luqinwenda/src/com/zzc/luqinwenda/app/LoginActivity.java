@@ -24,7 +24,6 @@ import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 
-	private static final String TAG = "------Log------";
 	private EditText loginET, pwdET;
 	private Button btn_login, btn_regiest;
 	private SharedPreferences pre;
@@ -45,9 +44,9 @@ public class LoginActivity extends Activity {
 		pre = getPreferences(MODE_PRIVATE);
 
 		long uid = pre.getLong("uid", 0);
-		// if (uid > 0) {
-		// jumpMain();
-		// }
+		if (uid > 0) {
+			jumpMain();
+		}
 	}
 
 	OnClickListener listener = new View.OnClickListener() {
@@ -79,8 +78,9 @@ public class LoginActivity extends Activity {
 		protected void onPostExecute(Object result) {
 			if (result != null) {
 				UserJson2Object userJ2O = new UserJson2Object(result.toString());
-				String infoString = userJ2O.isLogin();
-				if (!infoString.isEmpty()) {
+				int status = userJ2O.getStatus();
+				if (status == 0) {
+					String infoString = userJ2O.getInfo("µÇÂ¼");
 					Toast.makeText(LoginActivity.this, infoString,
 							Toast.LENGTH_LONG).show();
 					return;
@@ -91,20 +91,19 @@ public class LoginActivity extends Activity {
 				editor.putLong("uid", user.uid);
 				editor.putString("uname", user.uname);
 				editor.commit();
-				Log.i(TAG, String.valueOf(user.uid));
+				//Log.i(TAG, String.valueOf(user.uid));
 				jumpMain();
 			}
 			super.onPostExecute(result);
 		}
 	}
 
-	private void jumpMain() {
+	public void jumpMain() {
 		Intent intent = new Intent();
 		intent.setClass(LoginActivity.this, MainActivity.class);
 		startActivity(intent);
 
 		finish();
-
 	}
 
 	@Override
